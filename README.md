@@ -8,6 +8,7 @@ The key advantages of ABCT include:
 
 (i) No complex integration with scRNA-seq datasets required
 (ii) Support for novel cell types defined by the user
+
 (iii) Effective utilization of spatial information for accurate cell type classification
 (iv) Clear differentiation between malignant and normal epithelial cells in tumor samples
 
