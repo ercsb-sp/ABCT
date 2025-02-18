@@ -7,9 +7,11 @@ ABCT is a hybrid cell type annotation method designed for spatial omics data, co
 The key advantages of ABCT include:
 
 (i) No complex integration with scRNA-seq datasets required
+
 (ii) Support for novel cell types defined by the user
 
 (iii) Effective utilization of spatial information for accurate cell type classification
+
 (iv) Clear differentiation between malignant and normal epithelial cells in tumor samples
 
 ABCT is compatible with a wide range of spatial technologies (e.g., 10x Xenium, MERFISH, CosMX, CODEX) and scales efficiently for large datasets. For more information, check out:
