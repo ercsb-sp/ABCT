@@ -126,7 +126,7 @@ obj <- update_metadata(obj, subobj, celltype_list)
 <br>
 <details>
 <summary><strong>Session Info</strong></summary>
-  ```{r sessioninfo, echo=FALSE}
+  ```{r sessioninfo}
   sessionInfo()
   ```
 </details>
