@@ -122,6 +122,13 @@ subobj <- RunABCT(
   path = abct_path
 )
 ```
+<p align="center">
+  <img src="images/2_abct_anchor.png" width="30%" />
+  <img src="images/2_abct_dim.png" width="30%" />
+  <img src="images/2_abct_image.png" width="30%" />
+</p>
+
+
 
 ### Updating Metadata
 Finally, update the metadata in the original object with the ABCT classification results.
