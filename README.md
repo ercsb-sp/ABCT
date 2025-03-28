@@ -1,7 +1,7 @@
 # ABCT
 ABCT(Anchor-based Cell Typer)
 
-![Graphical Abstract](images/graphical_abstract.png)
+![Graphical Abstract](images/0_graphical_abstract.png)
 
 
 ## Overview
