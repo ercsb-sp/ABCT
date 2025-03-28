@@ -23,7 +23,8 @@ ABCT is compatible with a wide range of spatial technologies (e.g., 10x Xenium, 
 
 
 ## Quick start
-
+### Loading Required Libraries
+Ensure that all necessary libraries are installed and loaded.
 
 ```{r libraries}
 library(Seurat)
