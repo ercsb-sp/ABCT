@@ -135,6 +135,7 @@ obj <- update_metadata(obj, subobj, celltype_list)
 <summary><strong>Session Info</strong></summary>
   
 ```r
+sessionInfo()
 #> R version 4.3.2 (2023-10-31)
 #> Platform: x86_64-conda-linux-gnu (64-bit)
 #> Running under: Rocky Linux 8.10 (Green Obsidian)
