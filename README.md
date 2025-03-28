@@ -48,7 +48,7 @@ source("./ABCT.r")
 ```
 
 ### Loading and Preparing Data
-Load the data for analysis. Here, we demonstrate using a Seurat object. The processed data can be downloaded from https://kbds.re.kr/hissta/datasetinfo?sampleIdx=19.
+Load the data for analysis. Here, we demonstrate using a Seurat object. The processed data can be downloaded from [HISSTA](https://kbds.re.kr/hissta/datasetinfo?sampleIdx=19).
 ```{r load-data}
 obj <- readRDS(paste0("/path/to/your/data/", "obj_final.rds"))
 ```
