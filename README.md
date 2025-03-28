@@ -52,6 +52,7 @@ Load the data for analysis. Here, we demonstrate using a Seurat object. The proc
 ```{r load-data}
 obj <- readRDS(paste0("/path/to/your/data/", "obj_final.rds"))
 ```
+
 ### Define Cell Type List and Marker Genes
 We define a list of cell types and specify marker genes for the analysis.
 ```{r cell-types}
@@ -71,6 +72,7 @@ ABCT_marker_list <- read.csv("/path/to/marker_list.csv")
 ABCT_marker_list$cluster <- factor(ABCT_marker_list$cluster, levels = celltype_list)
 ABCT_marker_list <- ABCT_marker_list %>% arrange(cluster)
 ```
+
 ### Identifying Malignant Cells
 Use the `FindMalignantCells` function to identify malignant cells in the data.
 ```{r find-malignant}
@@ -91,6 +93,7 @@ obj <- FindMalignantCells(
   path = malignant_path
 )
 ```
+
 ### Performing ABCT Classification
 Subsequently, classify the non-malignant cells using the RunABCT function. By default, if a BANKSY object already exists in the Seurat object, RunABCT will use the existing BANKSY object rather than running it again. If you wish to rerun BANKSY on a subsetted object, you should remove the existing BANKSY assay before executing the function.
 ```{r run-abct}
@@ -112,30 +115,32 @@ subobj <- RunABCT(
   path = abct_path
 )
 ```
+
 ### Updating Metadata
 Finally, update the metadata in the original object with the ABCT classification results.
 ```{r update-metadata}
 obj <- update_metadata(obj, subobj, celltype_list)
 ```
+
 <br>
 <br>
 <details>
 <summary><strong>Session Info</strong></summary>
 ```{r sessioninfo, echo=FALSE}
-#> R version 4.3.2 (2023-10-31)
-#> Platform: x86_64-conda-linux-gnu (64-bit)
-#> Running under: Rocky Linux 8.10 (Green Obsidian)
-#> 
-#> Matrix products: default
-#> 
-#> locale:
-#>  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
-#>  [3] LC_TIME=ko_KR.UTF-8        LC_COLLATE=en_US.UTF-8    
-#>  [5] LC_MONETARY=ko_KR.UTF-8    LC_MESSAGES=en_US.UTF-8   
-#>  [7] LC_PAPER=ko_KR.UTF-8       LC_NAME=C                 
-#>  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
-#> [11] LC_MEASUREMENT=ko_KR.UTF-8 LC_IDENTIFICATION=C       
-#> 
+R version 4.3.2 (2023-10-31)
+Platform: x86_64-conda-linux-gnu (64-bit)
+Running under: Rocky Linux 8.10 (Green Obsidian)
+ 
+Matrix products: default
+
+locale:
+[1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+[3] LC_TIME=ko_KR.UTF-8        LC_COLLATE=en_US.UTF-8    
+[5] LC_MONETARY=ko_KR.UTF-8    LC_MESSAGES=en_US.UTF-8   
+[7] LC_PAPER=ko_KR.UTF-8       LC_NAME=C                 
+[9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=ko_KR.UTF-8 LC_IDENTIFICATION=C       
+ 
 #> time zone: Asia/Seoul
 #> tzcode source: system (glibc)
 #> 
