@@ -17,9 +17,9 @@ The key advantages of ABCT include:
 
 ABCT is compatible with a wide range of spatial technologies (e.g., 10x Xenium, MERFISH, CosMX, CODEX) and scales efficiently for large datasets. For more information, check out:
 
-- the [paper](https://www.nature.com/articles/s41588-024-01664-3), (논문 링크)
-- a tutorial on ABCT, a set of [vignettes](https://prabhakarlab.github.io/Banksy) showing basic usage, usage compatibility with Seurat ([here](https://github.com/satijalab/seurat-wrappers/blob/master/docs/banksy.md) and [here](https://satijalab.org/seurat/articles/visiumhd_analysis_vignette#identifying-spatially-defined-tissue-domains)),  (tutorial)
-- a [Zenodo archive](https://zenodo.org/records/10258795) containing scripts to reproduce the analyses in the paper (데이터 다운로드 페이지?)
+- the [paper](), (논문 링크)
+- a tutorial on ABCT, a set of [vignettes]()(tutorial)
+- [HISSTA](https://kbds.re.kr/hissta/) containing data used in the analyses presented in the paper
 
 
 
