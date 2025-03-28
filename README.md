@@ -17,8 +17,8 @@ The key advantages of ABCT include:
 
 ABCT is compatible with a wide range of spatial technologies (e.g., 10x Xenium, MERFISH, CosMX, CODEX) and scales efficiently for large datasets. For more information, check out:
 
-- the [paper](), (논문 링크)
-- a tutorial on ABCT, a set of [vignettes]()(tutorial)
+- the [paper]()
+- a tutorial on ABCT, a set of [vignettes]()
 - [HISSTA](https://kbds.re.kr/hissta/) containing data used in the analyses presented in the paper
 
 
