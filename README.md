@@ -93,6 +93,13 @@ obj <- FindMalignantCells(
   path = malignant_path
 )
 ```
+<p align="center">
+  <img src="images/1_malignant_anchor.png" width="30%" />
+  <img src="images/1_malignant_dim.png" width="30%" />
+  <img src="images/1_malignant_image.png" width="30%" />
+</p>
+
+
 
 ### Performing ABCT Classification
 Subsequently, classify the non-malignant cells using the RunABCT function. By default, if a BANKSY object already exists in the Seurat object, RunABCT will use the existing BANKSY object rather than running it again. If you wish to rerun BANKSY on a subsetted object, you should remove the existing BANKSY assay before executing the function.
