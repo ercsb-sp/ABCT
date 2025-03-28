@@ -23,3 +23,22 @@ ABCT is compatible with a wide range of spatial technologies (e.g., 10x Xenium, 
 
 
 ## Quick start
+
+
+```{r libraries}
+library(Seurat)
+library(SeuratWrappers)
+library(Banksy)
+library(harmony)
+library(dplyr)
+library(scales)
+library(EnvStats)
+library(stringr)
+library(matrixStats)
+library(InSituType)
+library(UCell)
+library(ggplot2)
+library(MASS)
+library(pracma)
+source("./ABCT_final.r")
+```
